@@ -59,8 +59,9 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
-    images: {
-    unoptimized: true,
+ images: {
+    loader: 'akamai',
+    path: '',
   },
    exportPathMap: function() {
     return {
